@@ -39,6 +39,18 @@
     </div>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script>
+        $('#signin_form').on('submit',function(e) {
+            e.preventDefault();//取消默认行为
+            var formdata =  $(this).serialize();
+            console.log(formdata);
+            $.post('/login',formdata,function(data){
+                // console.log(data);
+                if(data.code === 200)
+                    return location.href = '/login';
+                alert(data.msg);
+            });
+        });
+
     </script>
 </body>
 
