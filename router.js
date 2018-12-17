@@ -7,6 +7,7 @@ const router = express.Router();
 router
     .get('/login',control.showLogin)
     .post('/login',control.handleLogin);
+   
 
 
 //导出路由
