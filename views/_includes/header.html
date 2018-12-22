@@ -48,12 +48,13 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">个人主页</a></li>
                         <li><a href="/settings/profile">设置</a></li>
-                        <li><a href="/signout">退出</a></li>
+                        <li><a href="/logout">退出</a></li>
                     </ul>
                 </li>
                 {{else}}
-                <a class="btn btn-primary navbar-btn" href="/signin">登录</a>
-                <a class="btn btn-success navbar-btn" href="/signup">注册</a> {{/if}}
+                <a class="btn btn-primary navbar-btn" href="/login">登录</a>
+                <a class="btn btn-success navbar-btn" href="/">注册</a> 
+                {{/if}}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
